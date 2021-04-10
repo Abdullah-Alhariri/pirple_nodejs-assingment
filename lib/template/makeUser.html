@@ -4,42 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/lib/template/style.css" />
     <title>title | test</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background-image: linear-gradient(
+          to right bottom,
+          #3c4677b7,
+          #3c467725
+        );
+      }
+      .navbar {
+        background-color: #24252a;
+        padding: 5px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        box-shadow: 0px 5px 20px 0px #24252a;
+      }
+      .navbar:first-child {
+        text-decoration: none;
+      }
+      .link {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 17px;
+        transition: all 0.2s;
+        font-weight: 500;
+      }
+      .link:hover {
+        color: rgba(255, 255, 255, 0.8);
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+        transform: scale(1.1);
+      }
+      .logo {
+        color: #fff;
+        margin-right: 1050px;
+      }
+
+      .main-title {
+        display: flex;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        color: #24252a;
+        margin-top: 60px;
+        margin-bottom: 0;
+        font-size: 42px;
+        font-weight: 400;
+        text-shadow: 0px 3px 20px #24252a7a;
+      }
+      .makeUser {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+      }
+      .form input {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <section class="home-page">
       <nav class="navbar">
         <a href="/"><h1 class="logo">Simple make</h1></a>
-        <a href="/makeUser" class="link">New account</a>
-        <a href="/editUser" class="link">Edit account</a>
-        <a href="/deleteUser" class="link">delete account</a>
-        <a href="/menu" class="link">Our menu</a>
+        <a href="/makeUser" class="link makeUser">New account</a>
+        <a href="/editUser" class="link editUser">Edit account</a>
+        <a href="/deleteUser" class="link deleteUser">delete account</a>
+        <a href="/menu" class="link menu">Our menu</a>
       </nav>
       <div class="main">
-        <h1 class="main-title">welcome to make user</h1>
-        <p class="main-paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores iure
-          nulla laudantium fuga obcaecati dolor non? Minus consequatur
-          aspernatur, ex, laboriosam neque recusandae nemo ratione eius nesciunt
-          molestiae aperiam alias.ipsum dolor sit amet consectetur adipisicing
-          elit. Maiores iure nulla laudantium fuga obcaecati dolor non? Minus
-          consequatur aspernatur, ex, laboriosam neque recusandae nemo ratione
-          eius nesciunt molestiae aperiam alias.
-        </p>
-      </div>
-      <div class="second-heading">
-        <img
-          class="img"
-          src="./../img/marek-piwnicki-_8zfgT9kS2g-unsplash.jpg"
-          alt=""
-        />
-        <div class="main-btn">
-          <a href="/makeUser" class="button">New account</a>
-          <a href="/editUser" class="button">Edit account</a>
-          <a href="/deleteUser" class="button">delete account</a>
-          <a href="/menu" class="button">Our menu</a>
-        </div>
+        <h1 class="main-title">
+          Make your first account, and make your life easyer!
+        </h1>
+        <form action="" class="form">
+          <input type="text" /><input type="text" /><input type="text" />
+        </form>
       </div>
     </section>
   </body>
