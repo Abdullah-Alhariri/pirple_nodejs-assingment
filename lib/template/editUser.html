@@ -14,8 +14,8 @@
         margin: 0;
         background-image: linear-gradient(
           to right bottom,
-          #3c4677b7,
-          #3c467725
+          #2b8663b7,
+          #acebd125
         );
       }
       .navbar {
@@ -59,10 +59,10 @@
         font-weight: 400;
         text-shadow: 0px 3px 20px #24252a7a;
       }
-      .makeUser {
+      .editAccount {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8);
       }
-      .main-makeUser {
+      .main-editAccount {
         display: flex;
         justify-content: center;
         /* background-color: orangered; */
@@ -108,6 +108,27 @@
       .email {
         padding: 10px;
       }
+      .hidden {
+        display: none;
+      }
+      .sucMessage {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+        margin: 0;
+        background-color: rgb(64, 180, 18);
+        padding: 10px;
+      }
+      .errorMessage {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+        margin: 0;
+        background-color: #ff3333;
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
@@ -120,27 +141,25 @@
         <a href="/menu" class="link menu">Our menu</a>
       </nav>
       <div class="main">
-        <h1 class="main-title">
-          Make your first account, and make your life easyer!
-        </h1>
+        <h1 class="main-title">Edit your existing account, with one click!</h1>
         <!-- prettier-ignore -->
-        <div class="main-makeUser">
-          <form action="" method="GET" class="form">
-            <div class=" subContainer">
-              <label class="namel" for="name">Name:</label>
-              <input class="name" type="text" id="name" name="firstName"/>
+        <div class="main-editAccount">
+          <form action="" method="POST" class="form">
+            <div class="subContainer">
+              <label class="namel" for="name">Your Id:</label>
+              <input class="name" type="text" id="name" name="firstName" required/>
             </div>
-            <div class=" subContainer">
-              <label class="streetNamel" for="streetName">* Street adres:</label>
-              <input class="streetName" type="text" id="streetName" name="text"required />
+            <div class="subContainer">
+              <label class="streetNamel" for="streetName">New street adres:</label>
+              <input class="streetName" type="text" id="streetName" name="text"/>
             </div>
-            <div class=" subContainer">
-              <label class="emaill" for="email">* Email:</label>
-              <input class="email" type="email" id="email" name="email" required/>
+            <div class="subContainer">
+              <label class="emaill" for="email">New email:</label>
+              <input class="email" type="email" id="email" name="email" />
             </div>
-            <div class="">
+            <p class="sucMessage hidden">Your account has been updated.</p>
+            <p class="errorMessage hidden">There is an error accured.</p>
             <input class="Submit" type="submit" value="Submit" />
-          </div>
           </form>
         </div>
       </div>

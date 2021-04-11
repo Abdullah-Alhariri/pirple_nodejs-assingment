@@ -14,8 +14,8 @@
         margin: 0;
         background-image: linear-gradient(
           to right bottom,
-          #3c4677b7,
-          #3c467725
+          rgba(189, 23, 37, 0.815),
+          #ac2b3525
         );
       }
       .navbar {
@@ -121,25 +121,16 @@
       </nav>
       <div class="main">
         <h1 class="main-title">
-          Make your first account, and make your life easyer!
+          Delete your account, all data will be removed from our server!
         </h1>
         <!-- prettier-ignore -->
         <div class="main-makeUser">
           <form action="" method="GET" class="form">
             <div class=" subContainer">
-              <label class="namel" for="name">Name:</label>
-              <input class="name" type="text" id="name" name="firstName"/>
+              <label class="namel" for="name">* Your id:</label>
+              <input class="name" type="text" id="name" name="firstName" required/>
             </div>
-            <div class=" subContainer">
-              <label class="streetNamel" for="streetName">* Street adres:</label>
-              <input class="streetName" type="text" id="streetName" name="text"required />
-            </div>
-            <div class=" subContainer">
-              <label class="emaill" for="email">* Email:</label>
-              <input class="email" type="email" id="email" name="email" required/>
-            </div>
-            <div class="">
-            <input class="Submit" type="submit" value="Submit" />
+            <input class="Submit" type="submit" value="Delete account" />
           </div>
           </form>
         </div>
