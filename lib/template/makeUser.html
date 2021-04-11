@@ -59,13 +59,12 @@
         font-weight: 400;
         text-shadow: 0px 3px 20px #24252a7a;
       }
-      .makeUser {
+      .active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8);
       }
       .main-makeUser {
         display: flex;
         justify-content: center;
-        /* background-color: orangered; */
       }
       label {
         font-family: "Montserrat", sans-serif;
@@ -108,13 +107,39 @@
       .email {
         padding: 10px;
       }
+      .hidden {
+        display: none;
+      }
+      .sucMessage {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+        margin: 0;
+        background-color: rgb(64, 180, 18);
+        padding: 10px;
+      }
+      .errorMessage {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+        margin: 0;
+        background-color: #ff3333;
+        padding: 10px;
+      }
+      .User-ID {
+        color: #24252a;
+        text-shadow: 0px 3px 20px #24252a;
+        font-weight: 900;
+      }
     </style>
   </head>
   <body>
     <section class="home-page">
       <nav class="navbar">
         <a href="/"><h1 class="logo">Simple make</h1></a>
-        <a href="/makeUser" class="link makeUser">New account</a>
+        <a href="/makeUser" class="link makeUser active">New account</a>
         <a href="/editUser" class="link editUser">Edit account</a>
         <a href="/deleteUser" class="link deleteUser">delete account</a>
         <a href="/menu" class="link menu">Our menu</a>
@@ -125,22 +150,22 @@
         </h1>
         <!-- prettier-ignore -->
         <div class="main-makeUser">
-          <form action="" method="GET" class="form">
+          <form action="" method="POST" class="form">
             <div class=" subContainer">
-              <label class="namel" for="name">Name:</label>
+              <label for="name">Name</label>
               <input class="name" type="text" id="name" name="firstName"/>
             </div>
             <div class=" subContainer">
-              <label class="streetNamel" for="streetName">* Street adres:</label>
+              <label for="streetName">* Street adres</label>
               <input class="streetName" type="text" id="streetName" name="text"required />
             </div>
             <div class=" subContainer">
-              <label class="emaill" for="email">* Email:</label>
+              <label for="email">* Email</label>
               <input class="email" type="email" id="email" name="email" required/>
             </div>
-            <div class="">
+            <p class="sucMessage hidden">Your account has been made your ID: <span class="User-ID">0123456789abcdefg</span></p>
+            <p class="errorMessage hidden">There is an error accured!</p>
             <input class="Submit" type="submit" value="Submit" />
-          </div>
           </form>
         </div>
       </div>

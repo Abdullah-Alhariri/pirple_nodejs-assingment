@@ -59,7 +59,7 @@
         font-weight: 400;
         text-shadow: 0px 3px 20px #24252a7a;
       }
-      .editAccount {
+      .active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8);
       }
       .main-editAccount {
@@ -136,7 +136,7 @@
       <nav class="navbar">
         <a href="/"><h1 class="logo">Simple make</h1></a>
         <a href="/makeUser" class="link makeUser">New account</a>
-        <a href="/editUser" class="link editUser">Edit account</a>
+        <a href="/editUser" class="link editUser active">Edit account</a>
         <a href="/deleteUser" class="link deleteUser">delete account</a>
         <a href="/menu" class="link menu">Our menu</a>
       </nav>
@@ -146,20 +146,20 @@
         <div class="main-editAccount">
           <form action="" method="POST" class="form">
             <div class="subContainer">
-              <label class="namel" for="name">Your Id:</label>
-              <input class="name" type="text" id="name" name="firstName" required/>
+              <label for="name">* Your Id</label>
+              <input class="name" type="text" id="id" name="firstName" required/>
             </div>
             <div class="subContainer">
-              <label class="streetNamel" for="streetName">New street adres:</label>
+              <label for="streetName">New street adres</label>
               <input class="streetName" type="text" id="streetName" name="text"/>
             </div>
             <div class="subContainer">
-              <label class="emaill" for="email">New email:</label>
+              <label for="email">New email</label>
               <input class="email" type="email" id="email" name="email" />
             </div>
             <p class="sucMessage hidden">Your account has been updated.</p>
             <p class="errorMessage hidden">There is an error accured.</p>
-            <input class="Submit" type="submit" value="Submit" />
+            <input class="Submit" type="submit" value="Update" />
           </form>
         </div>
       </div>

@@ -14,8 +14,8 @@
         margin: 0;
         background-image: linear-gradient(
           to right bottom,
-          rgba(189, 23, 37, 0.815),
-          #ac2b3525
+          #84862bb7,
+          #ebe2ac25
         );
       }
       .navbar {
@@ -47,7 +47,6 @@
         color: #fff;
         margin-right: 1050px;
       }
-
       .main-title {
         display: flex;
         justify-content: center;
@@ -59,54 +58,19 @@
         font-weight: 400;
         text-shadow: 0px 3px 20px #24252a7a;
       }
-      .acitve {
+      .active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8);
       }
-      .main-deleteUser {
-        display: flex;
-        justify-content: center;
-        /* background-color: orangered; */
-      }
-      label {
+      .menu-container {
         font-family: "Montserrat", sans-serif;
-        margin-right: 10px;
-        font-weight: 500;
-      }
-      .form {
-        margin-top: 30px;
-        background-color: white;
-        padding: 30px 60px;
-        border-radius: 10px;
-        box-shadow: 0px 5px 20px 0px #24252a;
-      }
-      .subContainer {
-        display: flex;
+        text-align: center;
+        color: #24252a;
+        text-shadow: 0px 3px 20px #24252a7a;
+        font-size: 20px;
+        width: 60%;
+        margin: auto;
+        line-height: 2;
         justify-content: center;
-        margin: 20px 0px;
-      }
-      .Submit {
-        width: 100%;
-        background-color: #24252a;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        padding: 10px;
-        font-size: 15px;
-        box-shadow: 0px 5px 20px 0px #24252a;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        margin-top: 10px;
-        justify-content: center;
-        cursor: pointer;
-      }
-      .Submit:active {
-        box-shadow: 0px 5px 25px 0px #24252a;
-        font-weight: 700;
-      }
-      .name,
-      .streetName,
-      .email {
-        padding: 10px;
       }
     </style>
   </head>
@@ -116,23 +80,34 @@
         <a href="/"><h1 class="logo">Simple make</h1></a>
         <a href="/makeUser" class="link makeUser">New account</a>
         <a href="/editUser" class="link editUser">Edit account</a>
-        <a href="/deleteUser" class="link deleteUser acitve">delete account</a>
-        <a href="/menu" class="link menu">Our menu</a>
+        <a href="/deleteUser" class="link deleteUser">delete account</a>
+        <a href="/menu" class="link menu active">Our menu</a>
       </nav>
       <div class="main">
-        <h1 class="main-title">
-          Delete your account, all data will be removed from our server!
-        </h1>
-        <!-- prettier-ignore -->
-        <div class="main-deleteUser">
-          <form action="" method="POST" class="form">
-            <div class=" subContainer">
-              <label for="name">* Your id</label>
-              <input class="name" type="text" id="id" name="id" required/>
-            </div>
-            <input class="Submit" type="submit" value="Delete account" />
-          </div>
-          </form>
+        <h1 class="main-title">Our menu, we are ready to make you happy!</h1>
+        <div class="menu-container">
+          <p>
+            Meal $5.99 2 Cheeseburgers $2.00 2 Cheeseburgers - Meal $4.89
+            Quarter Pounder with Cheese $3.79 Quarter Pounder with Cheese - Meal
+            $5.79 Double Quarter Pounder with Cheese $4.79 Double Quarter
+            Pounder with Cheese - Meal $6.69 Bacon Clubhouse Burger $4.49 Bacon
+            Clubhouse Burger - Meal $6.49 Buttermilk Crispy Chicken $4.39
+            Buttermilk Crispy Chicken - Meal $6.39 Artisan Grilled Chicken $4.39
+            Artisan Grilled Chicken - Meal $6.39 Premium McWrap Chicken & Bacon
+            (Grilled or Crispy)$4.39 Premium McWrap Chicken & Bacon (Grilled or
+            Crispy) - Meal $6.39 Premium McWrap Chicken & Ranch (Grilled or
+            Crispy) $4.39 Premium McWrap Chicken & Ranch (Grilled or Crispy) -
+            Meal $6.39 Premium McWrap Sweet Chili Chicken (Grilled or
+            Crispy)$4.39 Premium McWrap Sweet Chili Chicken (Grilled or Crispy)
+            - Meal $6.39 Filet-O-Fish $3.79 Filet-O-Fish - Meal $5.79 Double
+            Filet-O-Fish $4.79 Double Filet-O-Fish - Meal $6.79 Premium Chicken
+            Bacon Clubhouse (Grilled or Crispy)$4.49 Premium Chicken Bacon
+            Clubhouse (Grilled or Crispy) - Meal $6.49 BBQ Pulled Pork Sandwich
+            $2.99 BBQ Pulled Pork Sandwich - Meal $4.99 Nuggets Meals Include
+            Medium French Fries or Salad & Soft Drink Chicken McNuggets $4.49 10
+            Pc. Chicken McNuggets - Meal $6.49 10 Pc. Chicken McNuggets $5.00 20
+            Pc
+          </p>
         </div>
       </div>
     </section>
