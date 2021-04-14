@@ -73,7 +73,6 @@
         font-weight: 500;
       }
       .form {
-        margin-top: 30px;
         background-color: white;
         padding: 30px 60px;
         border-radius: 10px;
@@ -129,6 +128,15 @@
         background-color: #ff3333;
         padding: 10px;
       }
+      .main-msg {
+        display: flex;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        color: #24252a;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
@@ -142,16 +150,17 @@
       </nav>
       <div class="main">
         <h1 class="main-title">Edit your existing account, with one click!</h1>
+        <h3 class="main-msg">your must include at least two fields</h3>
         <!-- prettier-ignore -->
         <div class="main-editAccount">
           <form action="" method="POST" class="form">
             <div class="subContainer">
               <label for="name">* Your Id</label>
-              <input class="name" type="text" id="id" name="firstName" required/>
+              <input class="name" type="text" id="id" name="id" required/>
             </div>
             <div class="subContainer">
-              <label for="streetName">New street adres</label>
-              <input class="streetName" type="text" id="streetName" name="text"/>
+              <label for="streetAddress">New street adres</label>
+              <input class="streetName" type="text" id="streetAddress" name="streetAddress"/>
             </div>
             <div class="subContainer">
               <label for="email">New email</label>
