@@ -1,9 +1,10 @@
 const server = require("./lib/server.js");
+const cli = require("./lib/cli");
 const app = {};
 
 app.init = function () {
-  // Start the server
   server.init();
+  cli.init();
 };
 
 app.init();
